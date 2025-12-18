@@ -1,34 +1,33 @@
 #!/usr/bin/env bash
 
 if (( $# != 1 )); then
-    echo "Errore, devi passare esattamente un file come argomento"
+    echo "Error, you need to pass a file as an argument"
     exit 1
 fi
 
 FILE="$1"
 
 if [[ ! -f ${FILE} ]]; then
-    echo "Errore, l'argomento passato non è un file"
+    echo "Error, the passed argument is not a file"
     exit 2
 fi
 
-# Rimosso l'else, il codice prosegue lineare
-echo "Analisi del file ${FILE}"
+echo "Inspecting file: ${FILE}"
 
 if [[ -r ${FILE} ]]; then
-    echo "Lettura: SI"
+    echo "Reading: YES"
 else
-    echo "Lettura: NO"
+    echo "Reading: NO"
 fi
 
 if [[ -w ${FILE} ]]; then
-    echo "Scrittura: SI"
+    echo "Writing: YES"
 else
-    echo "Scrittura: NO"
+    echo "Writing: NO"
 fi
 
 if [[ -x ${FILE} ]]; then
-    echo "Esecuzione: SI"
+    echo "Execution: YES"
 else
-    echo "Esecuzione: NO"
+    echo "Execution: NO"
 fi
