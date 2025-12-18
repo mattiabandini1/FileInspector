@@ -12,22 +12,55 @@ if [[ ! -f ${FILE} ]]; then
     exit 2
 fi
 
-echo "Inspecting file: ${FILE}"
+# LOGICS
 
 if [[ -r ${FILE} ]]; then
-    echo "Reading: YES"
+    R_ICON="[x]"
+    R_TEXT="YES"
 else
-    echo "Reading: NO"
+    R_ICON="[ ]"
+    R_TEXT="NO"
 fi
 
 if [[ -w ${FILE} ]]; then
-    echo "Writing: YES"
+    W_ICON="[x]"
+    W_TEXT="YES"
 else
-    echo "Writing: NO"
+    W_ICON="[ ]"
+    W_TEXT="NO"
 fi
 
 if [[ -x ${FILE} ]]; then
-    echo "Execution: YES"
+    X_ICON="[x]"
+    X_TEXT="YES"
 else
-    echo "Execution: NO"
+    X_ICON="[ ]"
+    X_TEXT="NO"
 fi
+
+# UI
+
+echo "========================================"
+echo "       FILE INSPECTOR v0.2.0           "
+echo "========================================"
+echo ""
+
+echo "TARGET INFO"
+echo "-----------"
+printf "File Name : %s\n" "${FILE}"
+echo ""
+
+echo "PERMISSIONS"
+echo "-----------"
+
+printf "%-12s %-5s %s\n" "Type" "Check" "Status"
+echo "------------ ----- ------"
+
+printf "%-12s %-5s %s\n" "Read"    "${R_ICON}" "${R_TEXT}"
+printf "%-12s %-5s %s\n" "Write"   "${W_ICON}" "${W_TEXT}"
+printf "%-12s %-5s %s\n" "Execute" "${X_ICON}" "${X_TEXT}"
+
+echo ""
+echo "========================================"
+echo "Analysis Complete."
+echo ""
