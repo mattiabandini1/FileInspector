@@ -1,0 +1,24 @@
+# --- File di Sistema (OS) ---
+.DS_Store
+Thumbs.db
+
+# --- File temporanei degli Editor ---
+# Vim / Vi
+*.swp
+*.swo
+# Nano (spesso lascia file che finiscono con ~)
+*~
+# VS Code / JetBrains (se userai IDE grafici)
+.vscode/
+.idea/
+
+# --- File di backup e log generici ---
+*.bak
+*.log
+*.tmp
+*.old
+
+# --- File generati durante i test (Opzionale) ---
+# Se creerai file di prova per testare lo script,
+# è meglio non caricarli su GitHub.
+test_files/
