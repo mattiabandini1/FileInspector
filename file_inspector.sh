@@ -14,6 +14,8 @@ fi
 
 # LOGICS
 
+clear
+
 if [[ -r ${FILE} ]]; then
     R_ICON="[x]"
     R_TEXT="YES"
