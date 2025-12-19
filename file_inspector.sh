@@ -5,6 +5,7 @@ G="\e[32m"
 RES="\e[0m"
 
 BOLD="\e[1m"
+DIM="\e[2m"
 
 ICON_OK="${G}[✔]${RES}"
 ICON_KO="${R}[✖]${RES}"
@@ -51,27 +52,27 @@ fi
 
 # UI
 
-echo "========================================"
+echo -e "${DIM}========================================${RES}"
 echo "       FILE INSPECTOR v0.2.0           "
-echo "========================================"
+echo -e "${DIM}========================================${RES}"
 echo ""
 
 echo "TARGET INFO"
-echo "-----------"
+echo -e "${DIM}-----------${RES}"
 printf "File Name : %s\n" "${FILE}"
 echo ""
 
 echo "PERMISSIONS"
-echo "-----------"
+echo -e "${DIM}-----------${RES}"
 
 printf "${BOLD}%-12b %-5b %b${RES}\n" "Type" "Check" "Status"
-echo "------------ ----- ------"
+echo -e "${DIM}------------ ----- ------${RES}"
 
 printf "${BOLD}%-12b${RES} %-5b %b\n" "Read"    "${R_ICON}" "${R_TEXT}"
 printf "${BOLD}%-12b${RES} %-5b %b\n" "Write"   "${W_ICON}" "${W_TEXT}"
 printf "${BOLD}%-12b${RES} %-5b %b\n" "Execute" "${X_ICON}" "${X_TEXT}"
 
 echo ""
-echo "========================================"
+echo -e "${DIM}========================================${RES}"
 echo "Analysis Complete."
 echo ""
