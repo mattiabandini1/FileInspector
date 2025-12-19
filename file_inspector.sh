@@ -3,6 +3,9 @@
 R="\e[31m"
 G="\e[32m"
 RES="\e[0m"
+
+BOLD="\e[1m"
+
 ICON_OK="${G}[✔]${RES}"
 ICON_KO="${R}[✖]${RES}"
 
@@ -61,12 +64,12 @@ echo ""
 echo "PERMISSIONS"
 echo "-----------"
 
-printf "%-12s %-5s %s\n" "Type" "Check" "Status"
+printf "${BOLD}%-12b %-5b %b${RES}\n" "Type" "Check" "Status"
 echo "------------ ----- ------"
 
-printf "%-12s %-5b %b\n" "Read"    "${R_ICON}" "${R_TEXT}"
-printf "%-12s %-5b %b\n" "Write"   "${W_ICON}" "${W_TEXT}"
-printf "%-12s %-5b %b\n" "Execute" "${X_ICON}" "${X_TEXT}"
+printf "${BOLD}%-12b${RES} %-5b %b\n" "Read"    "${R_ICON}" "${R_TEXT}"
+printf "${BOLD}%-12b${RES} %-5b %b\n" "Write"   "${W_ICON}" "${W_TEXT}"
+printf "${BOLD}%-12b${RES} %-5b %b\n" "Execute" "${X_ICON}" "${X_TEXT}"
 
 echo ""
 echo "========================================"
