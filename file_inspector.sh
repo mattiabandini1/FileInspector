@@ -53,7 +53,7 @@ fi
 # UI
 
 echo -e "${DIM}========================================${RES}"
-echo "       FILE INSPECTOR v0.2.0           "
+echo -e "${BOLD}       FILE INSPECTOR v0.2.0           ${RES}"
 echo -e "${DIM}========================================${RES}"
 echo ""
 
