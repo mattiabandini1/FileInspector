@@ -57,12 +57,12 @@ echo -e "${BOLD}       FILE INSPECTOR v0.2.0           ${RES}"
 echo -e "${DIM}========================================${RES}"
 echo ""
 
-echo "TARGET INFO"
+echo -e "${BOLD}TARGET INFO${RES}"
 echo -e "${DIM}-----------${RES}"
-printf "File Name : %s\n" "${FILE}"
+printf "File Name : ${DIM}%s${RES}\n" "${FILE}"
 echo ""
 
-echo "PERMISSIONS"
+echo -e "${BOLD}PERMISSIONS${RES}"
 echo -e "${DIM}-----------${RES}"
 
 printf "${BOLD}%-12b %-5b %b${RES}\n" "Type" "Check" "Status"
