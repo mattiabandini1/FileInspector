@@ -90,7 +90,9 @@ echo -e "${RES}"
 
 echo -e "${COLOR_BRAND}${BOLD}TARGET INFO${RES}"
 echo -e "${DIM}-----------${RES}"
-printf "${BOLD}%-12s${RES} : ${DIM}%b${RES}\n" "File Name" "${W}${FILE}${RES}"
+printf "${BOLD}%-12s${RES} : ${DIM}%b${RES}\n" "File Name" "${FILE}${RES}"
+printf "${BOLD}%-12s${RES} : ${DIM}%b${RES} : ${DIM}%b${RES}\n" "Owner" "${FILE_USER}" "${FILE_GROUP}"
+printf "${BOLD}%-12s${RES} : ${DIM}%b${RES}\n" "Octal" "${FILE_OCTAL}"
 echo ""
 
 echo -e "${COLOR_BRAND}${BOLD}PERMISSIONS${RES}"
