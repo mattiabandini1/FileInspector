@@ -26,7 +26,7 @@ Currently, the tool is a portable single-file script.
 
 The project is divided into incremental phases. Track the progress and future goals here.
 
-### ✅ v0.1.0 - The Foundation (Current Version)
+### ✅ v0.1.0 - The Foundation
 
 The base version, developed as a strict Bash exercise.
 
@@ -35,15 +35,15 @@ The base version, developed as a strict Bash exercise.
 * [x] Basic permission verification (Read, Write, Execute).
 * [x] Simple text output (YES/NO).
 
-### 🚧 v0.2.0 - Visual Upgrade (Next Step)
+### ✅ v0.2.0 - Visual Upgrade (Current Version)
 
 Improving the User Experience (UX) in the terminal.
 
-* [ ] Implementation of ANSI color codes (Green for granted, Red for denied).
-* [ ] Visual icons (✔ / ✖) for immediate readability.
-* [ ] Formatted table/block output for better clarity.
+* [x] Implementation of ANSI color codes (Green for granted, Red for denied).
+* [x] Visual icons (✔ / ✖) for immediate readability.
+* [x] Formatted table/block output for better clarity.
 
-### 🔮 v0.3.0 - The Admin Tools
+### 🚧 v0.3.0 - The Admin Tools
 
 Advanced features for system administrators.
 
