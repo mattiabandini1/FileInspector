@@ -41,6 +41,10 @@ if [[ ! -f ${FILE} ]]; then
     exit 2
 fi
 
+FILE_USER=$(stat -c "%U" "${FILE}")
+FILE_GROUP=$(stat -c "%G" "${FILE}")
+FILE_OCTAL=$(stat -c "%a" "${FILE}")
+
 # LOGICS
 
 clear
