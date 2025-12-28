@@ -18,7 +18,7 @@ Currently, the tool is a portable single-file script.
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/TUO_USERNAME/FileInspector.git
+   git clone https://github.com/mattiabandini1/FileInspector.git
    cd FileInspector
    ```
 
