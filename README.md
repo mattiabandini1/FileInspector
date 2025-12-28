@@ -6,7 +6,9 @@
 
 **FileInspector** started as an academic Bash scripting exercise and is evolving into a comprehensive system administration assistant for the terminal. Developed and tested on **Fedora Linux**.
 
-![FileInspector Screenshot](screenshot_v0.3.2.png)
+<p align="center">
+  <img src="screenshot.png" alt="FileInspector Screenshot">
+</p>
 
 ---
 
